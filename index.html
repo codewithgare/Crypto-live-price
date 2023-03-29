@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Images/icon.svg" type="image/x-icon" />
+    <title>Coin.hub</title>
+
+    <!-- !!External styling files -->
+    <link rel="stylesheet" href="/Css/main.css" />
+    <link rel="stylesheet" href="/Css/header.css" />
+    <link rel="stylesheet" href="/Css/hero.css" />
+    <link rel="stylesheet" href="/Css/price_section.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="body_container">
+      <header>
+        <div class="header_cnt">
+          <a href="#"> <img class="logo" src="/Images/logo.svg" alt="logo" /> </a>
+          <nav>
+            <ul class="nav_list" id="nav_list">
+              <li>
+                <a href="#"
+                  ><img class="close_btn" id="close_btn" src="/Images/close_btn.svg" alt=""
+                /></a>
+              </li>
+              <li><a class="active" href="#">Market</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">White paper</a></li>
+              <li><a href="#">About us</a></li>
+              <li>
+                <a class="nav_cta" href="#"
+                  >Explore
+                  <svg
+                    width="7"
+                    height="11"
+                    viewBox="0 0 7 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.55 5.07499C6.55 5.19637 6.525 5.3141 6.475 5.4282C6.425 5.54229 6.35833 5.63696 6.275 5.71221L1.675 9.89966C1.49167 10.0665 1.25833 10.15 0.974999 10.15C0.691666 10.15 0.458333 10.0665 0.275 9.89966C0.0916663 9.73277 -2.75222e-08 9.52036 -3.87963e-08 9.26244C-5.00704e-08 9.00452 0.0916662 8.79211 0.275 8.62522L4.175 5.07499L0.274999 1.52477C0.0916659 1.35788 -3.936e-07 1.14547 -4.04874e-07 0.88755C-4.16148e-07 0.629628 0.0916659 0.417223 0.274999 0.250332C0.458333 0.083441 0.691666 -5.75228e-06 0.974999 -5.76466e-06C1.25833 -5.77705e-06 1.49167 0.0834409 1.675 0.250332L6.275 4.43777C6.375 4.52881 6.446 4.62742 6.488 4.73363C6.53 4.83983 6.55067 4.95362 6.55 5.07499Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <img class="menu_btn" id="menu_btn" src="/Images/menu_btn.svg" alt="menu button" />
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero_ctn">
+          <div class="hero_text">
+            <h1>Get live <span>Crypto</span> price updates.</h1>
+            <button class="hero_cta">Explore more</button>
+          </div>
+          <img class="hero_img" src="/Images/hero_bg_img.png" alt="hero background" />
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="price_ctn">
+          <div class="price_card">
+            <img src="/Images/bitcoin.png" alt="bitcoin" />
+            <div class="price_coin">
+              <p class="price">$<span id="btc"></span></p>
+              <p class="coin">Bitcoin</p>
+            </div>
+          </div>
+          <div class="price_card">
+            <img src="/Images/ethereum.png" alt="bitcoin" />
+            <div class="price_coin">
+              <p class="price">$<span id="eth"></span></p>
+              <p class="coin">Ethereum</p>
+            </div>
+          </div>
+          <div class="price_card">
+            <img src="/Images/dogecoin.png" alt="bitcoin" />
+            <div class="price_coin">
+              <p class="price">$<span id="dogecoin"></span></p>
+              <p class="coin">Dogecoin</p>
+            </div>
+          </div>
+          <div class="price_card">
+            <img src="/Images/usdt.png" alt="bitcoin" />
+            <div class="price_coin">
+              <p class="price">$<span id="usdt"></span></p>
+              <p class="coin">Usdt</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- !!JavaScript External Files -->
+    <script src="/main.js"></script>
+    <script src="/coinGeckoApi.js"></script>
+  </body>
+</html>
