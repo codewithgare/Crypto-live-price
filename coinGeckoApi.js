@@ -25,15 +25,15 @@ axios
   });
 
 //Binance API call for USD to Naira
-axios
-  .get(usdtNgnUrl)
-  .then((response) => {
-    console.log();
-    //usdtPrice.innerHTML = response.data.slice(-1)[0].p; //to get the last array element
-  })
-  .catch((error) => {
-    console.log(error);
-  })
-  .finally(() => {
-    console.log("finished");
-  });
+// axios
+//   .get(usdtNgnUrl)
+//   .then((response) => {
+//     console.log(response.data.slice(-1)[0].p);
+//usdtPrice.innerHTML = response.data.slice(-1)[0].p; //to get the last array element
+// })
+// .catch((error) => {
+//   console.log(error);
+// })
+// .finally(() => {
+//   console.log("finished");
+// });
