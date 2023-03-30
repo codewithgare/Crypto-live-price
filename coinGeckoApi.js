@@ -6,8 +6,6 @@ const usdtPrice = document.getElementById("usdt");
 const URL =
   "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin%2Cusd&vs_currencies=usd";
 
-const usdtNgnUrl = "https://api.binance.com/api/v1/aggTrades?symbol=USDTNGN";
-
 axios
   .get(URL)
   .then((response) => {
@@ -25,6 +23,7 @@ axios
   });
 
 //Binance API call for USD to Naira
+// const usdtNgnUrl = "https://api.binance.com/api/v1/aggTrades?symbol=USDTNGN";
 // axios
 //   .get(usdtNgnUrl)
 //   .then((response) => {
