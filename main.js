@@ -7,7 +7,10 @@ navButtons.forEach((navButton) => {
       navButton.classList.add("active");
       if (screenWidth >= 920) {
         navList.style.display = "flex";
+      } else {
       }
+      navList.style.display = "none";
+      menuBtn.style.display = "block";
     });
   });
 });
